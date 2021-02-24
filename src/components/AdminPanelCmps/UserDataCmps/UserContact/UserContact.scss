@@ -1,0 +1,22 @@
+.user-contact {
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: rgb(53, 67, 85);
+    background-color: rgb(240, 240, 240);
+    p {
+        margin: 26px 5px;
+    }
+    h3 {
+        margin: 5px;
+    }
+    span {
+        font-family: metropolis-bold;
+    }
+}
+
+@media(max-width:500px){
+    .user-contact{
+        font-size: 1rem;
+        text-align: center;
+    }
+}

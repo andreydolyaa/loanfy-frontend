@@ -1,0 +1,109 @@
+.form{
+    color:rgb(0, 50, 116);
+    width:1600px;
+    position: relative;
+    .success{
+        color:rgb(0, 169, 0);
+        position: absolute;
+        bottom:10px;
+        left:10px;
+    }
+    .container{
+        display: flex;
+        .btn{
+            margin:3rem;
+            text-align: center;
+        }
+        button{
+            border:1px solid #3E2093;
+            background-color: transparent;
+            font-size:14px;
+            padding:5px 1rem 5px 1rem;
+            color:#3E2093;
+            font-family: metropolis-medium;
+            transition: .2s;
+        }
+        button:hover{
+            background-color: #3E2093;
+            color:white;
+        }
+        .left{
+            background-color: #ffffff;
+            width:100%;
+            input{
+                border:none;
+                border-bottom:1px solid rgb(151, 151, 151);
+                width:250px;
+                outline: none;
+                padding:5px 0 5px 0;
+            }
+            div{
+                label{
+                    display:Flex;
+                    justify-content: space-between;
+                    font-family:metropolis-medium;
+                    align-items: center;
+                    font-size:14px;
+                }
+            }
+            select{
+                border:1px solid rgb(0, 50, 116);
+                width:250px;
+                color:rgb(0, 50, 116);
+                outline: none;
+                padding:2px;
+                border-radius: 3px;
+            }
+        }
+        .inners > *{
+            margin:2rem auto;
+            line-height: 25px;
+            max-width: 550px;
+        }
+        .right{
+            background-color: #3e2093;
+            width:100%;
+            color:white;
+            position: relative;
+            .img{
+                z-index:2;
+                position: absolute;
+                height:100%;
+                width:100%;
+                background-image: url('../../assets/img/info1.svg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position-x: -10px;
+                background-position-y: 295px;
+                opacity:.4;
+            }
+        }
+    }
+}
+
+@media(max-width:500px){
+    .form{
+        width:400px;
+        margin:3rem auto;
+        text-align: center;
+        background-color: #fff;
+        .success{
+            display: none;
+        }
+        .container{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .right{
+                width:400px;
+            }
+            .left{
+                div{
+                    label{
+                        flex-direction: column;
+                    }
+                }
+            }
+        }
+    }
+}

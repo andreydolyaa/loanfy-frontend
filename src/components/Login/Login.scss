@@ -1,0 +1,111 @@
+.logins {
+    height: 100vh;
+    .inner-z {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -60%);
+        max-width: 1600px;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(233, 233, 233);
+        height: 550px;
+        padding: 2rem;
+        border-radius: 5px;
+        color: #2b3061;
+        h1 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .field {
+            margin: 1rem auto;
+            p {
+                font-family: metropolis-medium;
+                margin-bottom: 5px;
+            }
+            input {
+                font-family: metropolis-medium;
+                width: 350px;
+                height: 40px;
+                padding: 5px;
+                border: 1px solid rgb(211, 211, 211);
+                border-radius: 5px;
+                outline: none;
+            }
+        }
+        .btn-z {
+            width: 350px;
+            height: 40px;
+            font-family: metropolis-medium;
+            margin-top: 2rem;
+            border: 2px solid #2b3061;
+            border-radius: 5px;
+            transition: 0.2s;
+            color: #2b3061;
+        }
+        button:hover {
+            background-color: #2b3061;
+            color: white;
+        }
+    }
+    .svg-img {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+        border-radius: 5px;
+        svg {
+            position: relative;
+            display: block;
+            width: calc(104% + 1.3px);
+            height: 49px;
+            .shape-fill {
+                fill: #2b3061;
+            }
+        }
+    }
+    .err {
+        color: red;
+        font-size: 12px;
+        position: absolute;
+        bottom: 80px;
+        left: 50%;
+        transform: translate(-50%, 50%);
+    }
+    .rec {
+        font-size: 12px;
+        color: rgb(255, 255, 255);
+        margin:5px 0;
+        p{
+            font-family: metropolis-regular;
+        }
+    }
+    .q-mark{
+        margin-top:3rem;
+        text-align: center;
+        cursor: pointer;
+        p{
+            margin-top:10px;
+        }
+    }
+    .display-hover{
+        position: absolute;
+        padding:5px;
+        border-radius: 3px;
+        background-color: rgb(106, 117, 129);
+        bottom:10px;
+        right:10px;
+        z-index: 5;
+    }
+}
+@media(max-width:500px){
+    .logins{
+        .inner-z{
+            max-width:400px;
+            margin-top:4rem;
+        }
+    }
+}

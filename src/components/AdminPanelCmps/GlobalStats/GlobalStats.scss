@@ -1,0 +1,142 @@
+.global-stats {
+    // overflow-y: hidden;
+    // overflow-x: hidden;
+    padding: 1rem;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 0.7fr 1.1fr 1.1fr 1.1fr;
+    grid-template-rows: 0.4fr 1.6fr 1fr;
+    gap: 25px;
+    grid-template-areas:
+        "leftbar topbar topbar topbar"
+        "leftbar main main main"
+        "leftbar bottomone bottomtwo bottomthree";
+    .leftbar,
+    .topbar,
+    .main,
+    .bottomone,
+    .bottomtwo,
+    .bottomthree {
+        border: 1px solid rgb(237, 242, 245);
+        // box-shadow: 0px 0px 5px rgb(208, 213, 216);
+        border-radius: 5px;
+    }
+}
+
+.leftbar {
+    grid-area: leftbar;
+    background-color: #3a3f54;
+    color: white;
+}
+.topbar {
+    grid-area: topbar;
+}
+.main {
+    grid-area: main;
+    background-color: rgb(245, 245, 245);
+    .details {
+        display: flex;
+        // justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .borrowed,
+    .this-return,
+    .total-users,
+    .joined-users,
+    .month-profit,
+    .loan-returned,
+    .left-to-return {
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 0px 7px rgb(225, 225, 225);
+        padding: 1rem;
+        margin: 1rem;
+        display: Flex;
+        flex-direction: column;
+        text-align: center;
+        border-radius: 5px;
+        justify-content: center;
+        .small-text {
+            font-size: 10px;
+            color: rgb(49, 49, 49);
+            font-family: metropolis-regular;
+        }
+        p {
+            margin: 5px;
+            font-family: metropolis-medium;
+            color: gray;
+        }
+        span {
+            font-size: 1.8rem;
+            color: rgb(67, 67, 102);
+            font-family: metropolis-bold;
+        }
+        .num {
+            color: blueviolet;
+        }
+        .num1 {
+            color: rgb(17, 197, 0);
+        }
+        .num2 {
+            color: red;
+        }
+    }
+    .title {
+        padding: 1rem;
+        background-color: rgb(130, 154, 182);
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        color: white;
+    }
+}
+.bottomone {
+    grid-area: bottomone;
+}
+.bottomtwo {
+    grid-area: bottomtwo;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: rgb(243, 247, 252);
+    h3 {
+        color: rgb(53, 67, 85);
+        text-align: center;
+    }
+    p {
+        margin: 10px;
+        font-family: metropolis-medium;
+        font-size: 14px;
+        color: rgb(53, 67, 85);
+        text-align: center;
+        span {
+            font-family: metropolis-medium;
+            color: blueviolet;
+        }
+    }
+}
+.bottomthree {
+    grid-area: bottomthree;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    color: rgb(53, 67, 85);
+}
+
+@media (max-width: 500px) {
+    .global-stats {
+        overflow-x: hidden;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-areas:
+            "topbar "
+            "main "
+            "bottomone"
+            "bottomtwo "
+            "bottomthree "
+            "leftbar ";
+            .main{
+                .details{
+                    justify-content: center;
+                }
+            }
+    }
+}

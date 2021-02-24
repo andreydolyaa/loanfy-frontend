@@ -1,0 +1,77 @@
+.plans {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    text-align: center;
+    h1 {
+        color: rgb(0, 50, 116);
+    }
+    .inner {
+        max-width: 1600px;
+        margin: 5rem auto 0 auto;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+    }
+    .plan {
+        max-width: 500px;
+        min-height: 450px;
+        border: 1px solid rgb(196, 196, 196);
+        padding: 2rem 1rem 1rem 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-shadow: 1px 1px 3px rgb(228, 228, 228);
+        font-family: metropolis-medium;
+        align-items: center;
+        color: rgb(0, 50, 116);
+        transition: 0.3s;
+        .duration {
+            font-family: metropolis-bold;
+            font-size: 14px;
+            color: rgb(126, 126, 126);
+        }
+        .intr {
+            font-family: metropolis-bold;
+            font-size: 14px;
+        }
+        img {
+            width: 64px;
+            text-align: center;
+        }
+        a {
+            border: 3px solid rgb(45, 102, 155);
+            background-color: rgb(45, 102, 155);
+            color: rgb(255, 255, 255);
+            padding: 10px;
+            font-size: 1.5rem;
+            width: 100%;
+            transition: 0.2s;
+        }
+        a:hover {
+            background-color: transparent;
+            color: rgb(45, 102, 155);
+            border: 3px solid rgb(45, 102, 155);
+        }
+    }
+    .plan > * {
+        margin: 10px;
+    }
+    .plan:hover {
+        box-shadow: 1px 1px 10px rgb(194, 194, 194);
+        border: 1px solid rgb(45, 102, 155);
+    }
+}
+
+@media (max-width: 1230px) {
+    .plans{
+        .inner{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .plan{
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+}
+

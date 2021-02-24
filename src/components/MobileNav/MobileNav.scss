@@ -1,0 +1,39 @@
+.mobile-navbar {
+    display: none;
+    background: linear-gradient(45deg, rgba(48,31,105,1) 0%, rgba(51,76,154,1) 61%, rgba(113,70,186,1) 100%);
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    .inner {
+        height: 400px;
+        width:100%;
+        box-shadow: 0px 0px 10px black;;
+        .list {
+            margin-top: 4rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            a {
+                font-size: 1rem;
+                margin:10px;
+            }
+        }
+    }
+    .logged-user{
+        color:white;
+        .icons-b{
+            margin-top: 1rem;;
+            div{
+                margin:10px 1rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .mobile-navbar {
+        display: flex;
+    }
+}

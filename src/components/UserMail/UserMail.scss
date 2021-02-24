@@ -1,0 +1,63 @@
+.user-mail {
+    margin: 1rem;
+
+    .message {
+        border-bottom: 1px solid gray;
+        justify-content: space-between;
+        cursor: pointer;
+        transition: 0.2s;
+        p {
+            font-family: metropolis-medium;
+            font-size: 14px;
+            padding: 1rem;
+        }
+        .trs {
+            p {
+                margin-right: 5px;
+            }
+            .ics {
+                color: rgb(112, 112, 112);
+            }
+        }
+    }
+    .message:hover {
+        background-color: rgb(243, 243, 243);
+    }
+
+    .show-msg > * {
+        margin: 2rem 0;
+    }
+    .show-msg {
+        max-height: 300px;
+        p {
+            font-family: metropolis-medium;
+        }
+        .date {
+            font-size: 10px;
+            color: gray;
+        }
+        .return {
+            cursor: pointer;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .user-mail {
+        margin: 10px;
+        .message {
+            p {
+                font-size: 10px;
+            }
+        }
+        .trs {
+            p{
+                margin:0;
+                font-size:8px;
+            }
+            .ics{
+                width:12px;
+            }
+        }
+    }
+}

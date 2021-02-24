@@ -1,0 +1,48 @@
+.send-msg {
+    h3 {
+        text-align: center;
+        color: rgb(53, 67, 85);
+    }
+    form {
+        div {
+            margin: 1rem;
+            display: flex;
+            flex-direction: column;
+            button {
+                margin-top: 1rem;
+                border:none;
+                background-color: #829AB6;
+                color:white;
+                font-size:1rem;
+                padding:10px;
+                border-radius: 3px;
+            }
+            p {
+                font-family: metropolis-medium;
+                font-size: 14px;
+                margin: 5px 0;
+            }
+            input{
+                border:1px solid rgb(216, 216, 216);
+                padding:10px;
+                border-radius: 3px;
+                outline: none;
+            }
+            textarea{
+                border:1px solid rgb(216, 216, 216);
+                padding:10px;
+                border-radius: 3px;
+                outline: none;
+            }
+        }
+    }
+    .msg{
+        position: absolute;
+        color:green;
+        bottom:0;
+        margin:auto;
+        display: flex;
+        justify-content: center;
+        width:100%;
+    }
+}

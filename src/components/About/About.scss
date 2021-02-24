@@ -1,0 +1,50 @@
+.about {
+    background: linear-gradient(45deg, rgba(38, 17, 108, 1) 0%, rgba(35, 75, 199, 1) 61%, rgba(42, 81, 147, 1) 100%);
+position: relative;
+    .inner {
+        padding: 5rem;
+        max-width: 1600px;
+        margin: auto;
+        color: white;
+        line-height: 30px;
+        // text-align: center;
+        h1 {
+            margin: 2rem 0;
+            font-size: 3rem;
+        }
+        p {
+            font-family: metropolis-medium;
+            font-size: 14px;
+        }
+    }
+    .svgf {
+        position: relative;
+        svg {
+            position: absolute;
+        }
+        .shape-fill {
+            fill: white;
+        }
+    }
+    
+}
+.custom-shape-divider-top-1614200508 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1614200508 svg {
+    position: relative;
+    display: block;
+    width: calc(139% + 1.3px);
+    height: 137px;
+}
+
+.custom-shape-divider-top-1614200508 .shape-fill {
+    fill: #FFFFFF;
+}

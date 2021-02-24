@@ -1,0 +1,31 @@
+.loan-box{
+    .svg-bgc{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        color: white;
+        fill: rgb(106, 0, 255);
+        z-index: 2;
+    }
+    .inner > *{
+        margin:2rem;
+        line-height: 30px;
+        z-index:4;
+    }
+    .inner{
+        position: relative;
+        z-index:3;
+        li{
+            list-style-position: inside;
+        }
+    }
+}
+@media(max-width:500px){
+    .loan-box{
+        font-size:12px;
+        
+    }
+}

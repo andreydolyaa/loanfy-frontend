@@ -1,0 +1,46 @@
+.footer {
+    background-color: #151831;
+    color: white;
+    .inner {
+        max-width: 1600px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 5rem 2rem 5rem 2rem;
+        a {
+            font-size: 1rem;
+        }
+        .column > * {
+            margin: 1rem;
+        }
+        .column {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    p{
+        text-align: center;
+        padding:15px;
+    }
+}
+
+@media (max-width: 450px) {
+    .footer{
+        .inner{
+            a{
+                font-size:12px;
+            }
+            .column > * {
+                margin: 10px;
+            }
+            .column {
+                h1{
+                    font-size: 14px;
+                }
+                h3{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

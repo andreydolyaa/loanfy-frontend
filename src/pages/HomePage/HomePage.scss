@@ -1,0 +1,137 @@
+.home-page {
+    height: 100vh;
+    background: rgb(97, 123, 199);
+    background: linear-gradient(
+        332deg,
+        rgb(64, 89, 126) 0%,
+        rgb(33, 67, 117) 23%,
+        rgba(39, 33, 91, 1) 45%,
+        rgba(0, 0, 0, 1) 90%
+    );
+    color: white;
+    .content {
+        max-width: 1600px;
+        justify-content: space-between;
+        z-index: 1;
+        .slogan {
+            width: 50%;
+            font-size: 1.8rem;
+            .btns {
+                margin-top: 4rem;
+                .start,
+                .signup {
+                    font-size: 1.8rem;
+                    margin-right: 1rem;
+                    padding: 1rem;
+                    font-family: Metropolis-medium;
+                    color: white;
+                    cursor: pointer;
+                    border-radius: 5px;
+                    transition: 0.3s;
+                }
+                .start {
+                    background-color: #4700ed;
+                    border: 3px solid #4700ed;
+                }
+                .signup {
+                    background-color: transparent;
+                    border: 3px solid #4700ed;
+                }
+                .start:hover {
+                    background-color: #6a31ee;
+                    border: 3px solid #6a31ee;
+                }
+                .signup:hover {
+                    border: 3px solid #6a31ee;
+                }
+            }
+            p {
+                margin-bottom: 1rem;
+                color: rgb(73, 60, 131);
+                font-size: 1.3rem;
+            }
+            h1 {
+                font-family: Metropolis-thin;
+                span {
+                    font-family: Metropolis-extrabold;
+                    background: linear-gradient(
+                        332deg,
+                        rgba(219, 78, 176, 1) 0%,
+                        rgba(113, 60, 130, 1) 23%,
+                        rgb(85, 51, 155) 27%,
+                        rgba(255, 255, 255, 1) 90%
+                    );
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+        }
+        .svg-animation {
+            z-index: 1;
+            width: 700px;
+        }
+    }
+}
+
+@media (max-width: 1670px) {
+    .home-page {
+        .content {
+            max-width: 1200px;
+        }
+    }
+}
+@media (max-width: 1230px) {
+    .home-page {
+        .slogan {
+            h1 {
+                font-size: 3rem;
+            }
+            text-align: center;
+        }
+        .content {
+            flex-direction: column;
+            .svg-animation {
+                width: 400px;
+                margin-top: 4rem;
+            }
+        }
+    }
+}
+@media (max-width: 800px) {
+    .home-page {
+        .slogan {
+            width: 90% !important;
+            margin-top: 5rem;
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .home-page {
+        .content {
+            .svg-animation {
+                width: 350px;
+                margin-top: 4rem;
+            }
+        }
+        .slogan {
+            margin-top: 5rem;
+            p {
+                font-size: 14px !important;
+                display: none;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            .btns {
+                .start,
+                .signup {
+                    font-size: 1.5rem !important;
+                }
+            }
+        }
+    }
+}

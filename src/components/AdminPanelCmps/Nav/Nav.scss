@@ -1,0 +1,42 @@
+
+
+.nav{
+    list-style: none;
+    height:100%;
+    display:flex;
+    align-items: center;
+    background-color: #3a3f54;
+    color:white;
+    border-radius: 3px;
+    li{
+        display: flex;
+        align-items: center;
+        margin-left:2rem;
+        a{
+            color:black;
+            font-size: 14px;
+            font-family: metropolis-medium;
+            margin:10px;
+            color:white;
+        }
+        a:hover{
+            color:gray;
+        }
+    }
+}
+
+@media (max-width: 500px){
+    .nav{
+        li{
+            justify-content: space-between;
+            margin:auto;
+            a{
+                font-size: 12px;
+                margin:10px;
+            }
+        }
+        .ics{
+            width:12px;
+        }
+    }
+}
